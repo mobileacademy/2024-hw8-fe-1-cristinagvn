@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #FFEFD5;
+}
+
+#gameBoard {
+    display: grid;
+    gap: 1px;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+#resetButton {
+    gap: 2px;
+    margin: 5px auto;
+    justify-content: center;
+}
+
+#difficulty {
+    margin: 2px auto;
+    justify-content: center;
+    background-color: #FFEFD5;
+    border-color: #DA70D6;
+    color: #DA70D6;
+}
+
+#customProbability {
+    background-color: #FFEFD5;
+    border-color: #DA70D6;
+    color: #DA70D6;
+}
+
+#resetButton {
+    background-color: #FFDAB9;
+    color: #DA70D6;
+    border-color: #DA70D6;
+}
+
+.square {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #999;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+
+    background-color: #B0E0E6;
+}
+
+.square.revealed {
+    background-color: #DDA0DD;
+    color: #FF1493;
+}
+
+.square.bomb {
+    background-color: white;
+}
+
+.square.bomb::before {
+    content: "\2620";
+    color: #FF1493;
+}
+
+.square.flagged {
+    background-color: #F0E68C;
+}
+
+.square.flagged::before {
+    content: "\26A0";
+    color: #FF1493;
+}
