@@ -1,0 +1,2 @@
+Hosting URL:
+https://frontend-bootcamp-minesweeper.web.app/
